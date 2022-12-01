@@ -1,3 +1,3 @@
 <?php
-  echo "oui";
+  require('html.html');
 ?>
