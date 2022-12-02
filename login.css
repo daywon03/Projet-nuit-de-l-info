@@ -2,12 +2,12 @@ header .header{
   background-color: #fff;
   height: 45px;
 }
+.Marque{
+    width: 50px;
+}
 header a img{
   width: 134px;
-margin-top: 4px;
-}
-.Logo h1{
-    text-align: center;
+  margin-top: 4px;
 }
 .login-page {
   width: 360px;
