@@ -14,10 +14,10 @@
             <p>Comment t'appelles tu</p>
           </div>
         </div>
-        <form class="login-form">
+        <div class="login-form">
           <input type="text" placeholder="nom" id="nom"/>
           <button onclick="login()">Start</button>
-        </form>
+        </div>
       </div>
     </div>
     <div class="Logo">
@@ -33,6 +33,8 @@
 
         const response = await fetch("/login.php", {method: "POST", body: parameters});
         const result = await response.text();
+        console.log(result);
+        window.location = "/html.html"
       }
     </script>
 </body>
