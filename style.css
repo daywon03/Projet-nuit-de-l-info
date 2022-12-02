@@ -3,7 +3,166 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
+    list-style: none;
+}
+
+html,body{
+    height: 100%;
 }
 body{
-    background-color: black;
+    
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
+
+.link{
+    width: 35px;
+    color:  rgb(255, 226, 229);
+}
+.logo{
+    z-index: 1;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
+
+.circle{
+    z-index: 1;
+    border-radius: 90px;
+    left: 50%;
+    transform: translate(-50%);
+    top: 705px;
+    position: absolute;
+    width: 55px;
+    height: 50px;
+    background-color: #FF808D;
+}
+.footer{
+    background-color: #FF808D;
+    position: relative;
+    top: 720px;
+    transform: translate(0,-100%);
+    width: 100%;
+    height: 30px;
+}
+
+.iphone{
+    opacity: 0;
+    animation: apparition 0.4s 0.4s ease-in-out forwards;
+    background-color: #D6D6D6;
+    width: 390px;
+    height: 844px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 40px;
+    transform: translate(-50%,-50%);
+}
+.encoche{
+    position: absolute;
+    top: 4%;
+    left: 25%;
+    transform:translate(-4%,-25%);
+    background-color: rgba(133,125, 125, 0.5);
+    width: 170px;
+    height: 18px;
+    border-radius: 9px;
+}
+.camera{
+    position: absolute;
+    top: 5%;
+    left: 72%;
+    border: 6px solid  rgb(133,125, 125);
+    width: 20px;
+    height: 20px;
+    background-color: #D6D6D6;
+    border-radius: 90px;
+    transform:translate(-6%,-72%);
+}
+.ecran{
+    position: absolute;
+    width: 350px;
+    height: 750px;
+    background-color: white;
+    transform:translate(-50%,-75%);
+    left: 50%;
+    top: 75%;
+}
+/*Partie nav*/
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-color: #FF808D;
+}
+.checkbtn{
+    cursor: pointer;
+    font-size: 30px;
+    position: absolute;
+    margin-left: 290px;
+    color: #FFE2E5;
+}
+#checka{
+    display: none;
+}
+/*TEST*/
+.checkbtn {
+    display: block;
+}
+.navul{
+    background-color: rgba(255,255, 255, 0.5);
+    opacity: 0;
+    position: fixed;
+    width: 100%;
+    height: 90%;
+    top: 50px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+}
+h1{text-align: center;
+    font-size: 35px;
+    text-decoration: underline;
+    margin-bottom: 60px;
+}
+nav>ul>li{
+    color: #FF4258;
+    margin-left: 25px;
+    text-align:left ;
+}
+h2{
+    width: 200px;
+    border-bottom: 2px solid #FF4258 ;
+}
+nav>ul>li>a{
+    color: #FF4258;
+    background: none;
+    font-size: 20px;
+}
+nav>ul>li>a:hover{
+        background: none;
+}
+#checka:checked~.navul{
+    opacity: 1;
+    left: 0;
+}
+.btn-toggle{
+    font-size: 25px;
+    font-weight: bold;
+    width: 200px;
+    border-bottom: 2px solid #FF4258 ;
+    cursor: pointer;
+}
+@keyframes apparition {
+    100%{
+        opacity: 1;
+    }
+    
+}
+
