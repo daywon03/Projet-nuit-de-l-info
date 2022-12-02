@@ -31,7 +31,7 @@
         const parameters = new FormData();
         parameters.append("name", name);
 
-        const response = await fetch("/index.php", {method: "POST", body: parameters});
+        const response = await fetch("/index.php?function=login", {method: "POST", body: parameters});
         const result = await response.text();
         console.log(result);
         window.location = "/html.html"
