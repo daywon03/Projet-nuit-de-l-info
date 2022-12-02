@@ -77,10 +77,41 @@
     height: 30px;
     border-radius: 9px;
 }
+.choix1b{
+    z-index: -1;
+    background-color: #FFB5BD;
+    color: white;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 85%;
+    transform: translate(-50%,-85%);
+    width: 300px;
+    height: 30px;
+    border-radius: 9px;
+}
+.choix2b{
+    z-index: -1;
+    background-color: #FFB5BD;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%,-90%);
+    width: 300px;
+    height: 30px;
+    border-radius: 9px;
+}
 .choix1>a,.choix2>a{
     font-size: 20px;
+    color: white;
+}
+.choix1b>a,.choix2b>a{
     color: white;
 }
 .suivant{
     display: none;
 }
+#gros{
+    font-size: 75%;
+    }
