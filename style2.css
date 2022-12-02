@@ -1,0 +1,108 @@
+@import url(style.css);
+.bulle-1{
+    z-index: -1;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 15px;
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    background-color: #FFB5BD;
+    animation: apparition 0.6s 0.6s ease-out forwards;
+    opacity: 0;
+}
+.minibull-1{
+    z-index: -1;
+    margin-right: 10px;
+    margin-top: 120px;
+    position: absolute;
+    right: 0;
+    background-color: #FFB5BD;
+    width: 20px;
+    height: 20px;
+    border-radius: 90px;
+    animation: apparition 0.6s 0.6s ease-out forwards;
+    opacity: 0;
+}
+.bulle-2{
+    z-index: -1;
+    margin-top: 160px;
+    margin-left: 40px;
+    border-radius: 15px;
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    background-color: #FF4258;
+    animation: apparition 0.7s 0.7s ease-out forwards;
+    opacity: 0;
+}
+.minibull-2{
+    z-index: -1;
+    margin-right: 10px;
+    margin-top: 250px;
+    position: absolute;
+    left: 0;
+    background-color: #FF4258;
+    width: 20px;
+    height: 20px;
+    border-radius: 90px;
+    animation: apparition 0.7s 0.7s ease-out forwards;
+    opacity: 0;
+}
+.bulle-3{
+    z-index: -1;
+    margin-top: 290px;
+    margin-left: 10px;
+    border-radius: 15px;
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    background-color: #FFB5BD;
+    animation: apparition 0.7s 0.7s ease-out forwards;
+    opacity: 0;
+}
+.minibull-3{
+    z-index: -1;
+    margin-right: 10px;
+    margin-top: 400px;
+    position: absolute;
+    right: 0;
+    background-color: #FFB5BD;
+    width: 20px;
+    height: 20px;
+    border-radius: 90px;
+    animation: apparition 0.7s 0.7s ease-out forwards;
+    opacity: 0;
+}
+.bulle-4{
+    z-index: -1;
+    margin-top: 460px;
+    margin-left: 40px;
+    border-radius: 15px;
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    background-color: #FF4258;
+    animation: apparition 0.8s 0.8s ease-out forwards;
+    opacity: 0;
+}
+.minibull-4{
+    
+    z-index: -1;
+    margin-right: 10px;
+    margin-top: 560px;
+    position: absolute;
+    left: 0;
+    background-color: #FF4258;
+    width: 20px;
+    height: 20px;
+    border-radius: 90px;
+    animation: apparition 0.8s 0.8s ease-out forwards;
+    opacity: 0;
+}
+@keyframes apparition {
+    100%{
+        opacity: 1;
+    }
+    
+}
