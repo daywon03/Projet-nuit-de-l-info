@@ -54,6 +54,7 @@
     opacity: 0;
 }
 .choix1{
+    z-index: -1;
     background-color: #FFB5BD;
     position: absolute;
     text-align: center;
@@ -65,6 +66,7 @@
     border-radius: 9px;
 }
 .choix2{
+    z-index: -1;
     background-color: #FFB5BD;
     position: absolute;
     text-align: center;
