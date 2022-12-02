@@ -8,7 +8,7 @@
     $loginBD = "testtest";
     $passBD = "testtest";
 
-    $bdd = new PDO ( "mysql:server=$hostname; dbname=$base;sslmode=require;sslrootcert=[path]/ca.crt", "$loginBD", "$passBD");
+    $bdd = new PDO ( "mysql:server=$hostname; dbname=$base;sslmode=require;sslrootcert=ca.pem", "$loginBD", "$passBD");
 
     $request = $bdd.prepare("select * from utilisateur");
     $request->execute();
