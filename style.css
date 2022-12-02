@@ -1,9 +1,14 @@
 @charset "utf-8";
+@font-face {
+    font-family: azeret;
+    src: url(Azeret.ttf);
+}
 *{
     padding: 0;
     margin: 0;
     text-decoration: none;
     list-style: none;
+    font-family: azeret;
 }
 
 html,body{
@@ -158,6 +163,13 @@ nav>ul>li>a:hover{
     width: 200px;
     border-bottom: 2px solid #FF4258 ;
     cursor: pointer;
+}
+.suivant{
+    position: absolute;
+    right: 0;
+}
+.image{
+    width: 30px;
 }
 @keyframes apparition {
     100%{
