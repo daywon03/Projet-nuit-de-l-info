@@ -39,7 +39,8 @@ header a img{
   box-sizing: border-box;
   font-size: 14px;
 }
-.form button {
+.button {
+font-style: none;
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;
