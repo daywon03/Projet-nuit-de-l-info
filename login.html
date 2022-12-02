@@ -6,7 +6,6 @@
 <title> CSS Login Screen Tutorial </title>
 </head>
 <body>
-  <body>
     <div class="login-page">
       <div class="form">
         <div class="login">
@@ -16,14 +15,25 @@
           </div>
         </div>
         <form class="login-form">
-          <input type="text" placeholder="nom"/>
-          <button>Start</button>
+          <input type="text" placeholder="nom" id="nom"/>
+          <button onclick="login()">Start</button>
         </form>
       </div>
     </div>
     <div class="Logo">
         
     </div>
-</body>
+    <script>
+      const login = async () => {
+        const nameInput = document.querySelector("#nom");
+        const name = nameInput.value;
+
+        const parameters = new FormData();
+        parameters.append("name", name);
+
+        const response = await fetch("/login.php", {method: "POST", body: parameters});
+        const result = await response.text();
+      }
+    </script>
 </body>
 </html>
